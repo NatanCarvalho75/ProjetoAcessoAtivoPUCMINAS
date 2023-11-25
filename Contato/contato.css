@@ -10,23 +10,25 @@ body {
 }
 
 .container-grid {
-    width: 1200px;
-    height: 100%;
+    max-width: 1200px;
+    width: 95%; /* Adicionado para garantir margens adequadas em telas maiores */
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header {
     background-color: yellow;
-    height: 60px;
+    height: 70px;
+    box-shadow: 5px 5px 5px #000;
+    margin-bottom: 50px;
 }
 
 .menu-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 18px;
 }
 
 .search-box {
@@ -47,12 +49,21 @@ header {
     color: #fff;
     border: none;
     border-radius: 3px;
-    padding: 5px 10px;
-    margin-left: 0px;
+    padding: 10px 15px;
+    margin-left: 150px;
     cursor: pointer;
 }
+.search-box button {
+    margin-left: 100px;
+}
 
+.texto-centro {
+    margin-top: 20px;
+}
 
+.caixa {
+    margin-left: 10px;
+}
 .menu {
     margin-left: 20px;
 }
@@ -72,11 +83,34 @@ header {
 
 .logo {
     width: 80px;
+    margin-top: 10px;
 }
+@media (max-width: 768px) {
+    .menu-search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .search-box {
+        margin-top: 10px;
+    }
+
+    .search-box input[type="text"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
 h1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     color: #333;
     font-size: 24px;
@@ -89,6 +123,7 @@ h1 {
     background-color: white;
     border: 3px solid #000;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 label {
@@ -113,7 +148,7 @@ button {
     padding: 20px;
     background-color:yellow;
     color: black;
-    border: 10%;
+    border: 2px solid #000;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -126,6 +161,7 @@ footer {
     background-color: yellow;
     color: yellow;
     padding: 10px 0;
+    margin-top: 160px;
 }
 
 footer .container-grid {
@@ -137,5 +173,7 @@ footer .container-grid {
 
 footer p {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000;
 }

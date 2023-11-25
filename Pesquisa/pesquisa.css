@@ -22,38 +22,14 @@ header {
     background-color: yellow;
     height: 70px;
     box-shadow: 5px 5px 5px #000;
-    margin-bottom: 50px;
 }
 
 .menu-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
 }
 
-.search-box {
-    display: flex;
-    align-items: center;
-}
-
-.search-box input[type="text"] {
-    width: 150px;
-    padding: 5px;
-    border: 1px solid #000;
-    border-radius: 3px;
-    margin-left: 100px;
-}
-
-.search-box button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 15px;
-    margin-left: 150px;
-    cursor: pointer;
-}
 .menu {
     margin-left: 20px;
 }
@@ -62,6 +38,7 @@ header {
     width: 660px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .menu a {
@@ -73,6 +50,7 @@ header {
 
 .logo {
     width: 80px;
+    margin-top: 18px;
 }
 @media (max-width: 768px) {
     .menu-search {
@@ -97,84 +75,90 @@ header {
         justify-content: space-around;
     }
 }
-
-h1 {
-    text-align: center;
-    margin-top: 40px;
-    color: #000;
-    font-size: 30px;
-}
-
-p {
+.texto-centro {
     text-align: center;
     margin-top: 30px;
-    color: #000;
-    font-size: 22px;
-
 }
 
-.video {
-    text-align: center;
-    margin-top: 20px;
-    padding: 150px 150px;
-    box-shadow: #000;
+.search-box {
+    display: flex;
+    align-items: center;
 }
 
-.motivacional-texto {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 22px;
-    color: #000;
+.search-box input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-left: 100px;
 }
 
-.btn-warning {
-    background-color: #FFD700;
-    color: #000;
-    border: 2px #000;
-    padding: 10px 20px;
-    font-size: 25px;
-    text-decoration: none;
-    display: inline-block;
+.search-box button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-left: 150px;
+    cursor: pointer;
     margin-top: 15px;
-    border-radius: 5px;
 }
 
-.motivacional-container {
+.filtros {
     text-align: center;
     margin-top: 20px;
+}
+
+.filtros label {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px #000000;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
     
 }
 
-.video-container {
-    text-align: center;
-    margin-top: 20px;
+.filtros button {
+    background-color: yellow; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-bottom: 10px;
+    
 }
 
-iframe {
-    width: 80%;
-    max-width: 800px;
-    height: auto;
-    border: none;
-}
-
-.company-info {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 300px 400px;
+.filtros select {
     border: 2px solid #000;
-    box-shadow: 5px 5px 5px #000;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.company-info h2 {
-    color: #000;
-    font-size: 24px;
+.filtros label {
+    font-size: 18px; 
+    display: block; /* Faz com que as labels fiquem em uma linha abaixo da outra */
+    margin-bottom: 5px; /* Adiciona espaço entre as labels */
 }
 
-.company-info p {
+input[type="submit"] {
+    width: 5%;
+    padding: 10px;
+    background-color: yellow;
     color: #000;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
 
 footer {
@@ -192,6 +176,6 @@ footer .container-grid {
 
 footer p {
     text-align: center;
-    font-size: 18px;
-    margin-top: 15px;
+    font-size: 14px;
+    color: #000;
 }

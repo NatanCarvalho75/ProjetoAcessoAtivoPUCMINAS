@@ -8,24 +8,25 @@
 }
 
 
-.container-grid{
-    width: 1200px;
-    height: 100%;
+.container-grid {
+    max-width: 1200px;
+    width: 95%; 
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 header{
     background-color: yellow;
-    height: 60px;
+    height: 70px;
+    box-shadow: 5px 5px 5px #000;
 }
 
 .menu-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .menu {
@@ -37,23 +38,18 @@ header{
     align-items: center;
 }
 
-.search-box input[type="text"] {
-    width: 150px;
-    padding: 5px;
-    border: 1px solid #000;
-    border-radius: 3px;
-    margin-left: 100px;
-}
 
 .search-box button {
     background-color: #000;
     color: #fff;
     border: none;
     border-radius: 3px;
-    padding: 5px 10px;
-    margin-left: 0px;
+    padding: 10px 15px;
+    margin-left: 150px;
     cursor: pointer;
 }
+
+
 .menu{
 width: 660px;
 display: flex;
@@ -69,19 +65,46 @@ justify-content: space-between;
 
 .logo{
     width: 80px;
+    margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .menu-search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        margin-top: 10px;
+    }
+
+    .search-box input[type="text"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
 .texto-centro{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+.caixa {
+    margin-left: 10px;
 }
 
 div.caixa {
     width: 150px;
-    display: flex; /* Usar flexbox para centralizar verticalmente */
+    display: flex; 
     flex-direction: column;
-    justify-content: center; /* Centralizar verticalmente */
-    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center; 
+    align-items: center; 
     margin-top: 75px;
     padding-bottom: 75px;
     margin-left: 680px;
@@ -90,9 +113,28 @@ div.caixa {
 
 div.caixa img {
     display: block;
-    margin: 20px 0; /* Espaço entre as imagens */
+    margin: 20px 0; 
+}
+.caixa {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
+.Imagem1,
+.Imagem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
 .avaliacao {
     text-align: center;
     font-size: 25px;
@@ -106,7 +148,7 @@ div.caixa img {
 
 footer {
     background-color: yellow;
-    color: yellow;
+    color: #000;
     padding: 10px 0;
 }
 
@@ -119,5 +161,6 @@ footer .container-grid {
 
 footer p {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
+    margin-top: 15px;
 }
