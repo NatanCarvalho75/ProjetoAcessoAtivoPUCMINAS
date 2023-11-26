@@ -19,7 +19,7 @@
 header{
     background-color: yellow;
     height: 70px;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #fff;
 }
 
 .menu-search {
