@@ -7,6 +7,9 @@
 <body>
     <div class="container">
         <h2>Cadastro</h2>
+        <!-- Adicione um elemento para exibir a mensagem de erro -->
+        <p id="errorMessage" class="error-message"></p>
+
         <form id="registrationForm">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
@@ -39,11 +42,19 @@
             var confirmPassword = document.getElementById("confirmPassword").value;
             var phone = document.getElementById("phone").value;
 
-            console.log("Email: " + email);
-            console.log("Nome: " + name);
-            console.log("Senha: " + password);
-            console.log("Confirme a Senha: " + confirmPassword);
-            console.log("Telefone: " + phone);
+            // Verifique se os campos estão vazios
+            if (email === "" || name === "" || password === "" || confirmPassword === "" || phone === "") {
+                document.getElementById("errorMessage").textContent = "Por favor, preencha todos os campos.";
+            } else {
+                // Se não houver erro, limpe a mensagem de erro
+                document.getElementById("errorMessage").textContent = "";
+
+                console.log("Email: " + email);
+                console.log("Nome: " + name);
+                console.log("Senha: " + password);
+                console.log("Confirme a Senha: " + confirmPassword);
+                console.log("Telefone: " + phone);
+            }
         });
     </script>
 </body>
