@@ -35,6 +35,10 @@
             <p>Cidade: São Paulo</p>
             <p>Estado: SP</p>
             <p>Outros: Informações adicionais sobre o usuário</p>
+            
+            <div id="smartFitRecommendation" style="display: none;">
+                <p>Recomendação para você! Confira o site da SmartFit em <a href="https://www.smartfit.com.br" target="_blank">https://www.smartfit.com.br</a>.</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -43,5 +47,13 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        var showSmartFitRecommendation = true;
+
+        if (showSmartFitRecommendation) {
+            document.getElementById("smartFitRecommendation").style.display = "block";
+        }
+    </script>
 </body>
 </html>
