@@ -11,7 +11,7 @@ body {
 
 .container-grid {
     max-width: 1200px;
-    width: 95%; 
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -52,6 +52,7 @@ header {
 .logo {
     width: 80px;
 }
+
 @media (max-width: 768px) {
     .menu-search {
         flex-direction: column;
@@ -87,6 +88,7 @@ header {
 .caixa {
     margin-left: 10px;
 }
+
 .texto-centro {
     text-align: center;
     margin-top: 30px;
@@ -168,4 +170,35 @@ footer p {
     text-align: center;
     font-size: 18px;
     margin-bottom: 5px;
+}
+
+/* Adicione estilos para centralizar os textos das modalidades esportivas */
+.modalidade-esportiva-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+
+.modalidade-text {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: yellow;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+.modalidade-text h2 {
+    color: #000;
+}
+
+.modalidade-text p {
+    color: #333;
+}
+
+.texto-informacoes h2 {
+text-align: center;
+font-size: 50px;    
 }
