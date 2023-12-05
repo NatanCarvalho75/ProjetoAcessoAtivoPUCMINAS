@@ -7,6 +7,7 @@
 <body>
     <div class="container">
         <h2>Cadastro</h2>
+
         <!-- Adicione um elemento para exibir a mensagem de erro -->
         <p id="errorMessage" class="error-message"></p>
 
@@ -54,6 +55,9 @@
                 console.log("Senha: " + password);
                 console.log("Confirme a Senha: " + confirmPassword);
                 console.log("Telefone: " + phone);
+
+                // Redirecionamento para outra página
+                window.location.href = "/Menu/index.html";
             }
         });
     </script>

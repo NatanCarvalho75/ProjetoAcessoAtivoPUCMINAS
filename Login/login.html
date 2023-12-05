@@ -7,15 +7,16 @@
 <body>
     <div class="container">
         <h2>Login</h2>
+
+        <!-- Adicione o elemento para exibir a mensagem de erro -->
+        <p id="errorMessage" class="error-message"></p>
+
         <form id="loginForm">
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
 
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required>
-
-            <!-- Adicione o elemento para exibir a mensagem de erro -->
-            <p id="errorMessage" class="error-message"></p>
 
             <input type="submit" value="Entrar">
         </form>
@@ -27,7 +28,7 @@
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
-            // Verifique se os campos estão vazios 
+            // Verifique se os campos estão vazios
             if (username === "" || password === "") {
                 document.getElementById("errorMessage").textContent = "Por favor, preencha todos os campos.";
             } else {
@@ -36,6 +37,9 @@
 
                 console.log("Usuário: " + username);
                 console.log("Senha: " + password);
+
+                // Redirecionamento para outra página
+                window.location.href = "/Menu/index.html";
             }
         });
     </script>
